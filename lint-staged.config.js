@@ -1,7 +1,7 @@
 module.exports = {
-  '**/*.{json,md,yml}': ['prettier --write', 'git add'],
-  '**/*.js': ['prettier --write', 'eslint --cache --fix', 'git add'],
-  '.editorconfig': ['prettier --write', 'git add'],
-  LICENSE: ['prettier --write', 'git add'],
-  'package.json': ['prettier --write', 'npm run format:package', 'git add'],
+  '**/*.{json,md,yml}': ['prettier --write'],
+  '**/*.js': ['prettier --write', 'eslint --cache --fix'],
+  '.editorconfig': ['prettier --write'],
+  LICENSE: ['prettier --write'],
+  'package.json': ['prettier --write', 'npm run format:package'],
 };
