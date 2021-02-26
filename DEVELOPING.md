@@ -12,4 +12,4 @@
 
 1. Create your feature branch: `git checkout -b my-new-feature`
 1. Write code
-1. Once complete, submit a [pull request on GitHub](https://github.com/iamturns/eslint-config-airbnb-typescript/pulls).
+1. Once complete, submit a [pull request on GitHub](https://github.com/nilzona/eslint-config-airbnb-ts/pulls).

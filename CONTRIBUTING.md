@@ -4,7 +4,7 @@ Thanks for being willing to contribute!
 
 ## Submitting Bug Reports
 
-Please use the [GitHub issue tracker](https://github.com/iamturns/eslint-config-airbnb-typescript/issues). Before creating a new issue, do a quick search to see if the problem has been reported already.
+Please use the [GitHub issue tracker](https://github.com/nilzona/eslint-config-airbnb-ts/issues). Before creating a new issue, do a quick search to see if the problem has been reported already.
 
 ## Contributing Code
 

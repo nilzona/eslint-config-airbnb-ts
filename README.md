@@ -1,8 +1,13 @@
-# eslint-config-airbnb-typescript
+# eslint-config-airbnb-ts
 
-[![Version](https://img.shields.io/npm/v/eslint-config-airbnb-typescript.svg?style=flat-square)](https://www.npmjs.com/package/eslint-config-airbnb-typescript?activeTab=versions) [![Downloads](https://img.shields.io/npm/dt/eslint-config-airbnb-typescript.svg?style=flat-square)](https://www.npmjs.com/package/eslint-config-airbnb-typescript) [![Last commit](https://img.shields.io/github/last-commit/iamturns/eslint-config-airbnb-typescript.svg?style=flat-square)](https://github.com/iamturns/eslint-config-airbnb-typescript/graphs/commit-activity) [![Build](https://img.shields.io/circleci/project/github/iamturns/eslint-config-airbnb-typescript/master.svg?style=flat-square)](https://circleci.com/gh/iamturns/eslint-config-airbnb-typescript) [![License](https://img.shields.io/github/license/iamturns/eslint-config-airbnb-typescript.svg?style=flat-square)](https://github.com/iamturns/eslint-config-airbnb-typescript/blob/master/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/iamturns/eslint-config-airbnb-typescript/blob/master/CONTRIBUTING.md) [![Code of conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square)](https://github.com/iamturns/eslint-config-airbnb-typescript/blob/master/CODE_OF_CONDUCT.md)
+[![Version](https://img.shields.io/npm/v/eslint-config-airbnb-ts.svg?style=flat-square)](https://www.npmjs.com/package/eslint-config-airbnb-ts?activeTab=versions) [![Downloads](https://img.shields.io/npm/dt/eslint-config-airbnb-ts.svg?style=flat-square)](https://www.npmjs.com/package/eslint-config-airbnb-ts) [![Last commit](https://img.shields.io/github/last-commit/nilzona/eslint-config-airbnb-ts.svg?style=flat-square)](https://github.com/nilzona/eslint-config-airbnb-ts/graphs/commit-activity) [![Build](https://img.shields.io/circleci/project/github/nilzona/eslint-config-airbnb-ts/master.svg?style=flat-square)](https://circleci.com/gh/nilzona/eslint-config-airbnb-ts) [![License](https://img.shields.io/github/license/nilzona/eslint-config-airbnb-ts.svg?style=flat-square)](https://github.com/nilzona/eslint-config-airbnb-ts/blob/master/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/nilzona/eslint-config-airbnb-ts/blob/master/CONTRIBUTING.md) [![Code of conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square)](https://github.com/nilzona/eslint-config-airbnb-ts/blob/master/CODE_OF_CONDUCT.md)
 
 Airbnb's ESLint config with TypeScript support
+
+This started as a fork from https://github.com/iamturns/eslint-config-airbnb-ts
+But is here modded to remove the eslint-config-airbnb as dependency.
+
+If you're migrating from [eslint-config-airbnbn-typescript](https://github.com/iamturns/eslint-config-airbnb-ts) then checkout out the [migrating guide]('./MIGRATING.md)
 
 ## Setup
 
@@ -24,7 +29,7 @@ If you want to lint React features then use together with `eslint-config-airbnb`
 
 ```bash
 npx install-peerdeps --dev eslint-config-airbnb
-npm install eslint-config-airbnb eslint-config-airbnb-typescript --save-dev
+npm install eslint-config-airbnb eslint-config-airbnb-ts --save-dev
 ```
 
 #### eslint-config-airbnb-base
@@ -33,20 +38,20 @@ If you want to lint without React support then install together with `eslint-con
 
 ```bash
 npx install-peerdeps --dev eslint-config-airbnb-base
-npm install eslint-config-airbnb-base eslint-config-airbnb-typescript --save-dev
+npm install eslint-config-airbnb-base eslint-config-airbnb-ts --save-dev
 ```
 
 ### 2) Configure ESLint
 
-Add `"extends": ["airbnb", "airbnb-typescript"]` to your ESLint config file.
+Add `"extends": ["airbnb", "airbnb-ts"]` to your ESLint config file.
 
-If you don't need React support, add `"extends": ["airbnb-base", "airbnb-typescript/base"]` instead.
+If you don't need React support, add `"extends": ["airbnb-base", "airbnb-ts/base"]` instead.
 
 An example `.eslintrc.js`:
 
 ```js
 module.exports = {
-  extends: ['airbnb', 'airbnb-typescript'],
+  extends: ['airbnb', 'airbnb-ts'],
 };
 ```
 
@@ -54,7 +59,7 @@ or for base
 
 ```js
 module.exports = {
-  extends: ['airbnb-base', 'airbnb-typescript/base'],
+  extends: ['airbnb-base', 'airbnb-ts/base'],
 };
 ```
 
@@ -68,7 +73,7 @@ For example:
 
 ```diff
  module.exports = {
-   extends: ['airbnb', 'airbnb-typescript'],
+   extends: ['airbnb', 'airbnb-ts'],
 +  parserOptions: {
 +    project: './tsconfig.json',
 + }
@@ -117,21 +122,19 @@ parserOptions: {
 
 ### I wish this config would support [...]
 
-The goal of `eslint-config-airbnb-typescript` is to simply decorate `eslint-config-airbnb` with TypeScript support. It's not a single config to cater for all TypeScript linting requirements. For additional functionality, alter your ESLint config file. For example:
+The goal of `eslint-config-airbnb-ts` is to simply decorate `eslint-config-airbnb` with TypeScript support. It's not a single config to cater for all TypeScript linting requirements. For additional functionality, alter your ESLint config file. For example:
 
 ```js
 module.exports = {
   extends: [
     'airbnb',
-    'airbnb-typescript',
+    'airbnb-ts',
     'airbnb/hooks',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
   ],
 };
 ```
-
-My personal ESLint config file with support for Jest, Promises, and Prettier can be found in [create-exposed-app](https://github.com/iamturns/create-exposed-app/blob/master/.eslintrc.js).
 
 ## Additional Documentation
 
@@ -142,10 +145,12 @@ My personal ESLint config file with support for Jest, Promises, and Prettier can
 
 ## Credits
 
-Authored and maintained by Matt Turnbull ([iamturns.com](https://iamturns.com) / [@iamturns](https://twitter.com/iamturns))
+Authored by Matt Turnbull ([iamturns.com](https://iamturns.com) / [@iamturns](https://twitter.com/iamturns))
 
-A big thank you to all [contributors](https://github.com/iamturns/eslint-config-airbnb-typescript/graphs/contributors)!
+Maintained by Anders Nilsson (nilssonanders79@gmail.com)
+
+A big thank you to all [contributors](https://github.com/nilzona/eslint-config-airbnb-ts/graphs/contributors)!
 
 ## License
 
-Open source [licensed as MIT](https://github.com/iamturns/eslint-config-airbnb-typescript/blob/master/LICENSE).
+Open source [licensed as MIT](https://github.com/nilzona/eslint-config-airbnb-ts/blob/master/LICENSE).

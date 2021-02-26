@@ -4,7 +4,7 @@ in versions <=12 you would have the following config
 
 ```js
 module.exports = {
-  extends: ['airbnb-typescript'],
+  extends: ['airbnb-ts'],
 };
 ```
 
@@ -12,11 +12,11 @@ or for base
 
 ```js
 module.exports = {
-  extends: ['airbnb-typescript/base'],
+  extends: ['airbnb-ts/base'],
 };
 ```
 
-from version >=v13 you will need to install the config you want to decorate and add that prior to `airbnb-typescript` e.g.
+from version >=v13 you will need to install the config you want to decorate and add that prior to `airbnb-ts` e.g.
 
 first
 
@@ -28,7 +28,7 @@ Then change eslint config to
 
 ```js
 module.exports = {
-  extends: ['airbnb', 'airbnb-typescript'],
+  extends: ['airbnb', 'airbnb-ts'],
 };
 ```
 
@@ -42,6 +42,6 @@ Then change eslint config to
 
 ```js
 module.exports = {
-  extends: ['airbnb-base', 'airbnb-typescript/base'],
+  extends: ['airbnb-base', 'airbnb-ts/base'],
 };
 ```
