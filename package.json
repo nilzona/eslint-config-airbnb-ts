@@ -18,7 +18,7 @@
     "format:eslint": "eslint --fix ./ >/dev/null 2>&1 || true",
     "format:package": "prettier-package-json --write",
     "format:prettier": "prettier --write \"**/*.{js,json,md,yml}\" \".editorconfig\" \"LICENSE\"",
-    "lint": "eslint ./",
+    "lint": "eslint . --ext ts,js",
     "validate": "npm run lint"
   },
   "dependencies": {
