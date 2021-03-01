@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/nilzona/eslint-config-airbnb-ts/issues"
   },
-  "version": "13.0.1",
+  "version": "13.1.0",
   "scripts": {
     "pre-commit": "lint-staged",
     "format": "npm run format:package && npm run format:prettier && npm run format:eslint",
