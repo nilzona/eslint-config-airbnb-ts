@@ -1,6 +1,6 @@
 # eslint-config-airbnb-ts
 
-[![Version](https://img.shields.io/npm/v/eslint-config-airbnb-ts.svg?style=flat-square)](https://www.npmjs.com/package/eslint-config-airbnb-ts?activeTab=versions) [![Downloads](https://img.shields.io/npm/dt/eslint-config-airbnb-ts.svg?style=flat-square)](https://www.npmjs.com/package/eslint-config-airbnb-ts) [![Last commit](https://img.shields.io/github/last-commit/nilzona/eslint-config-airbnb-ts.svg?style=flat-square)](https://github.com/nilzona/eslint-config-airbnb-ts/graphs/commit-activity) [![Build](https://img.shields.io/circleci/project/github/nilzona/eslint-config-airbnb-ts/master.svg?style=flat-square)](https://circleci.com/gh/nilzona/eslint-config-airbnb-ts) [![License](https://img.shields.io/github/license/nilzona/eslint-config-airbnb-ts.svg?style=flat-square)](https://github.com/nilzona/eslint-config-airbnb-ts/blob/master/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/nilzona/eslint-config-airbnb-ts/blob/master/CONTRIBUTING.md) [![Code of conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square)](https://github.com/nilzona/eslint-config-airbnb-ts/blob/master/CODE_OF_CONDUCT.md)
+[![Version](https://img.shields.io/npm/v/eslint-config-airbnb-ts.svg?style=flat-square)](https://www.npmjs.com/package/eslint-config-airbnb-ts?activeTab=versions) [![Downloads](https://img.shields.io/npm/dt/eslint-config-airbnb-ts.svg?style=flat-square)](https://www.npmjs.com/package/eslint-config-airbnb-ts) [![Last commit](https://img.shields.io/github/last-commit/nilzona/eslint-config-airbnb-ts.svg?style=flat-square)](https://github.com/nilzona/eslint-config-airbnb-ts/graphs/commit-activity) [![License](https://img.shields.io/github/license/nilzona/eslint-config-airbnb-ts.svg?style=flat-square)](https://github.com/nilzona/eslint-config-airbnb-ts/blob/master/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/nilzona/eslint-config-airbnb-ts/blob/master/CONTRIBUTING.md) [![Code of conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square)](https://github.com/nilzona/eslint-config-airbnb-ts/blob/master/CODE_OF_CONDUCT.md)
 
 Airbnb's ESLint config with TypeScript support
 
@@ -62,6 +62,9 @@ module.exports = {
   extends: ['airbnb-base', 'airbnb-ts/base'],
 };
 ```
+
+Also note that we're enabling @typescript-eslint/eslint-plugin's recommended rules by default
+You can turn them off if you want but since they're recommended they should probably be enabled.
 
 ### 4) Configure the ESLint TypeScript parser
 
