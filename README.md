@@ -4,7 +4,7 @@
 
 Airbnb's ESLint config with TypeScript support
 
-This started as a fork from https://github.com/iamturns/eslint-config-airbnb-ts
+This started as a fork from https://github.com/iamturns/eslint-config-airbnb-typescript
 But is here modded to remove the eslint-config-airbnb as dependency.
 
 If you're migrating from [eslint-config-airbnbn-typescript](https://github.com/iamturns/eslint-config-airbnb-ts) then checkout out the [migrating guide]('./MIGRATING.md)
