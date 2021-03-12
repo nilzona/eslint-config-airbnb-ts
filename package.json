@@ -19,32 +19,30 @@
     "format:package": "prettier-package-json --write",
     "format:prettier": "prettier --write \"**/*.{js,json,md,yml}\" \".editorconfig\" \"LICENSE\"",
     "lint": "eslint . --ext ts,js",
-    "release": "standard-version",
-    "release:major": "standard-version --release-as major",
-    "release:minor": "standard-version --release-as minor",
-    "release:patch": "standard-version --release-as patch",
+    "prepare": "husky install",
+    "release": "release-it",
     "validate": "npm run lint"
   },
-  "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.15.2",
-    "@typescript-eslint/parser": "^4.15.2"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "eslint-config-airbnb-base": ">=14.0.0",
     "typescript": ">=4.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
-    "eslint": "^7.20.0",
+    "@commitlint/cli": "^12.0.1",
+    "@commitlint/config-conventional": "^12.0.1",
+    "@release-it/conventional-changelog": "^2.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "eslint": "^7.21.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-import": "^2.22.1",
-    "husky": "^4.3.8",
+    "husky": "^5.1.3",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
     "prettier-package-json": "^2.1.3",
-    "standard-version": "^9.1.0",
+    "release-it": "^14.4.1",
     "typescript": "~4.1.5"
   },
   "keywords": [
