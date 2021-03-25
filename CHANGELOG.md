@@ -1,3 +1,9 @@
+### [13.1.3](https://github.com/nilzona/eslint-config-airbnb-ts/compare/v13.1.2...v13.1.3) (2021-03-25)
+
+### Bug Fixes
+
+- move dependencies ([eae6517](https://github.com/nilzona/eslint-config-airbnb-ts/commit/eae65172e55db0a7d582b8eff86f46a43dfdeb2b))
+
 ### [13.1.2](https://github.com/nilzona/eslint-config-airbnb-ts/compare/v13.1.1...v13.1.2) (2021-03-12)
 
 ### [13.1.1](https://github.com/nilzona/eslint-config-airbnb-ts/compare/v13.1.1...v13.1.2) (2021-03-01)
