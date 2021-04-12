@@ -5,8 +5,8 @@
 ### How do I setup the the project?
 
 1. Fork the repo
-1. Install dependencies: `npm install`
-1. Ensure everything is working: `npm run validate`
+1. Install dependencies: `yarn`
+1. Ensure everything is working: `yarn validate`
 
 ### What's the workflow?
 
