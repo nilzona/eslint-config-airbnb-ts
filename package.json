@@ -1,6 +1,7 @@
 {
   "private": true,
   "name": "eslint-config-airbnb-ts",
+  "version": "14.0.0",
   "workspaces": [
     "packages/*"
   ],

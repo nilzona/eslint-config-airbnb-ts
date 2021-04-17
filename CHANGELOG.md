@@ -1,3 +1,13 @@
+## [14.0.0](https://github.com/nilzona/eslint-config-airbnb-ts/compare/v13.1.3...v14.0.0) (2021-04-17)
+
+### ⚠ BREAKING CHANGES
+
+- convert to monorepo packages airbnb-ts, airbnb-base-ts, airbnb-ts-decorator
+
+### Features
+
+- convert to monorepo packages airbnb-ts, airbnb-base-ts, airbnb-ts-decorator ([eb1090a](https://github.com/nilzona/eslint-config-airbnb-ts/commit/eb1090a185509f017d5afb7075370a089994cff3))
+
 ### [13.1.3](https://github.com/nilzona/eslint-config-airbnb-ts/compare/v13.1.2...v13.1.3) (2021-03-25)
 
 ### Bug Fixes
