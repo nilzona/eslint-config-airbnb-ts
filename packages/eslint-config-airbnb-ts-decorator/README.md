@@ -2,7 +2,7 @@
 
 [![Version](https://img.shields.io/npm/v/eslint-config-airbnb-ts-decorator.svg?style=flat-square)](https://www.npmjs.com/package/eslint-config-airbnb-ts-decorator?activeTab=versions) [![Downloads](https://img.shields.io/npm/dt/eslint-config-airbnb-ts-decorator.svg?style=flat-square)](https://www.npmjs.com/package/eslint-config-airbnb-ts-decorator) [![Last commit](https://img.shields.io/github/last-commit/nilzona/eslint-config-airbnb-ts.svg?style=flat-square)](https://github.com/nilzona/eslint-config-airbnb-ts/graphs/commit-activity) [![License](https://img.shields.io/github/license/nilzona/eslint-config-airbnb-ts.svg?style=flat-square)](https://github.com/nilzona/eslint-config-airbnb-ts/blob/master/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/nilzona/eslint-config-airbnb-ts/blob/master/CONTRIBUTING.md) [![Code of conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square)](https://github.com/nilzona/eslint-config-airbnb-ts/blob/master/CODE_OF_CONDUCT.md)
 
-Add typescript support to Airbnb's ESLint config's. This library should typically not be used. Instead use `eslint-config-airbnb-ts-base` or `eslint-config-airbnb-ts`
+Add typescript support to Airbnb's ESLint config's. This library should typically not be used. Instead use [eslint-config-airbnb-ts-base](../eslint-config-airbnb-ts-base/README.md) or [eslint-config-airbnb-ts](../eslint-config-airbnb-ts/README.md)
 
 This started as a fork from https://github.com/iamturns/eslint-config-airbnb-typescript
 
