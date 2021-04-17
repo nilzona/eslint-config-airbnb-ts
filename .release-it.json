@@ -1,9 +1,11 @@
 {
-  "npm": {
-    "publish": true
-  },
+  "npm": false,
   "git": {
     "commitMessage": "chore(release): v${version}"
+  },
+  "hooks": {
+    "before:init": ["yarn lint"],
+    "after:release": "echo Successfully released ${name} v${version} to ${repo.repository}."
   },
   "plugins": {
     "@release-it/conventional-changelog": {
@@ -11,6 +13,7 @@
       "preset": {
         "name": "conventionalcommits"
       }
-    }
+    },
+    "release-it-yarn-workspaces": true
   }
 }

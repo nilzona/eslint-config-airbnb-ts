@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable @typescript-eslint/no-var-requires, import/no-extraneous-dependencies */
 const { rules: baseBestPracticesRules } = require('eslint-config-airbnb-base/rules/best-practices');
 const { rules: baseErrorsRules } = require('eslint-config-airbnb-base/rules/errors');
 const { rules: baseES6Rules } = require('eslint-config-airbnb-base/rules/es6');
@@ -35,10 +35,13 @@ module.exports = {
     // Replace Airbnb 'camelcase' rule with '@typescript-eslint/naming-convention'
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/naming-convention.md
     camelcase: 'off',
-    // The `@typescript-eslint/naming-convention` rule allows `leadingUnderscore` and `trailingUnderscore` settings. However, the existing `no-underscore-dangle` rule already takes care of this.
+    // The `@typescript-eslint/naming-convention` rule allows `leadingUnderscore` and
+    // `trailingUnderscore` settings. However, the existing `no-underscore-dangle`
+    // rule already takes care of this.
     '@typescript-eslint/naming-convention': [
       'error',
-      // Allow camelCase variables (23.2), PascalCase variables (23.8), and UPPER_CASE variables (23.10)
+      // Allow camelCase variables (23.2), PascalCase variables (23.8),
+      // and UPPER_CASE variables (23.10)
       {
         selector: 'variable',
         format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
@@ -48,7 +51,9 @@ module.exports = {
         selector: 'function',
         format: ['camelCase', 'PascalCase'],
       },
-      // Airbnb recommends PascalCase for classes (23.3), and although Airbnb does not make TypeScript recommendations, we are assuming this rule would similarly apply to anything "type like", including interfaces, type aliases, and enums
+      // Airbnb recommends PascalCase for classes (23.3), and although Airbnb does not make
+      // TypeScript recommendations,we are assuming this rule would similarly apply to anything
+      // "type like", including interfaces, type aliases, and enums
       {
         selector: 'typeLike',
         format: ['PascalCase'],
@@ -57,7 +62,8 @@ module.exports = {
 
     // Replace Airbnb 'comma-dangle' rule with '@typescript-eslint' version
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/comma-dangle.md
-    // The TypeScript version also adds 3 new options, all of which should be set to the same value as the base config
+    // The TypeScript version also adds 3 new options, all of which should be set to the
+    // same value as the base config
     'comma-dangle': 'off',
     '@typescript-eslint/comma-dangle': [
       baseStyleRules['comma-dangle'][0],
@@ -245,7 +251,8 @@ module.exports = {
     {
       files: ['*.ts', '*.tsx'],
       rules: {
-        // The following rules are enabled in Airbnb config, but are already checked (more thoroughly) by the TypeScript compiler
+        // The following rules are enabled in Airbnb config, but are already checked
+        // (more thoroughly) by the TypeScript compiler
         // Some of the rules also fail in TypeScript files, for example: https://github.com/typescript-eslint/typescript-eslint/issues/662#issuecomment-507081586
         'constructor-super': 'off',
         'getter-return': 'off',

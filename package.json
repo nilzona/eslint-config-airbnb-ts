@@ -1,40 +1,25 @@
 {
+  "private": true,
   "name": "eslint-config-airbnb-ts",
-  "description": "Adds typescript support to Airbnb's ESLint config",
-  "license": "MIT",
-  "author": "Anders Nilsson <nilssonanders79@gmail.com>",
-  "homepage": "https://github.com/nilzona/eslint-config-airbnb-ts",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nilzona/eslint-config-airbnb-ts.git"
-  },
-  "bugs": {
-    "url": "https://github.com/nilzona/eslint-config-airbnb-ts/issues"
-  },
-  "version": "13.1.3",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "pre-commit": "lint-staged",
     "format": "npm run format:package && npm run format:prettier && npm run format:eslint",
     "format:eslint": "eslint --fix ./ >/dev/null 2>&1 || true",
     "format:package": "prettier-package-json --write",
     "format:prettier": "prettier --write \"**/*.{js,json,md,yml}\" \".editorconfig\" \"LICENSE\"",
-    "lint": "eslint . --ext ts,js",
+    "lint": "eslint . --ext ts,js,tsx",
     "prepare": "husky install",
     "release": "release-it",
     "validate": "npm run lint"
-  },
-  "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.17.0",
-    "@typescript-eslint/parser": "^4.17.0"
-  },
-  "peerDependencies": {
-    "eslint-config-airbnb-base": ">=14.0.0",
-    "typescript": ">=4.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.0.1",
     "@commitlint/config-conventional": "^12.0.1",
     "@release-it/conventional-changelog": "^2.0.1",
+    "@types/react": "^17.0.3",
     "eslint": "^7.21.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.1.0",
@@ -44,6 +29,7 @@
     "prettier": "^2.2.1",
     "prettier-package-json": "^2.1.3",
     "release-it": "^14.4.1",
+    "release-it-yarn-workspaces": "^2.0.0",
     "typescript": "~4.1.5"
   },
   "keywords": [
