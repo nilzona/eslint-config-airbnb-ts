@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['./packages/airbnb-base-ts/base.js', 'prettier'],
+  extends: ['./packages/eslint-config-airbnb-base-ts/base.js', 'prettier'],
   parserOptions: {
     project: './tsconfig.json',
   },
@@ -11,7 +11,7 @@ module.exports = {
           version: '17', // instead of 'detect'
         },
       },
-      extends: ['./packages/airbnb-ts/index.js', 'prettier'],
+      extends: ['./packages/eslint-config-airbnb-ts/index.js', 'prettier'],
     },
   ],
 };

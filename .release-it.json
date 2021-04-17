@@ -14,8 +14,6 @@
         "name": "conventionalcommits"
       }
     },
-    "release-it-yarn-workspaces": {
-      "skipChecks": true
-    }
+    "release-it-yarn-workspaces": true
   }
 }
