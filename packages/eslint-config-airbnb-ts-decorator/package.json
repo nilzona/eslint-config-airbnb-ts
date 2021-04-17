@@ -14,8 +14,8 @@
   "version": "14.0.0",
   "main": "ts-decorator.js",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "~4.17.0",
-    "@typescript-eslint/parser": "~4.17.0"
+    "@typescript-eslint/eslint-plugin": "~4.22.0",
+    "@typescript-eslint/parser": "~4.22.0"
   },
   "peerDependencies": {
     "eslint-config-airbnb-base": ">=14.0.0"
