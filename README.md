@@ -6,7 +6,6 @@ Monorepo for Airbnb's ESLint config with TypeScript support:
 
 - [Airbnb](packages/eslint-config-airbnb-ts/README.md)
 - [Airbnb base](packages/eslint-config-airbnb-base-ts/README.md)
-- [Airbnb ts decorator](packages/eslint-config-airbnb-ts-decorator/README.md)
 
 ## Additional Documentation
 
