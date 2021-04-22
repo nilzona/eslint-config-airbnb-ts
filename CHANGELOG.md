@@ -1,3 +1,14 @@
+## [14.1.0](https://github.com/nilzona/eslint-config-airbnb-ts/compare/v14.0.0...v14.1.0) (2021-04-22)
+
+### Features
+
+- remove decorator package ([79c3af9](https://github.com/nilzona/eslint-config-airbnb-ts/commit/79c3af94d216223a66d1750e7be06fd07a85870c))
+
+### Bug Fixes
+
+- **deps:** update typescript-eslint monorepo to ~4.22.0 ([557c72d](https://github.com/nilzona/eslint-config-airbnb-ts/commit/557c72d20164d7554917ccedffaac95513ef1a2d))
+- renamed folders for publish to work ([9a1ca65](https://github.com/nilzona/eslint-config-airbnb-ts/commit/9a1ca6566dd32ef6bea904abe46acd00366d69ce))
+
 ## [14.0.0](https://github.com/nilzona/eslint-config-airbnb-ts/compare/v13.1.3...v14.0.0) (2021-04-17)
 
 ### ⚠ BREAKING CHANGES
