@@ -1,0 +1,10 @@
+{
+  "npm": false,
+  "git": false,
+  "github": {
+    "release": true
+  },
+  "plugins": {
+    "release-it-yarn-workspaces": true
+  }
+}
