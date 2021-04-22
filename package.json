@@ -14,8 +14,7 @@
     "format:prettier": "prettier --write \"**/*.{js,json,md,yml}\" \".editorconfig\" \"LICENSE\"",
     "lint": "eslint . --ext ts,js,tsx",
     "prepare": "husky install",
-    "publish": "release-it -c .release-it-publish.json --ci --dry-run",
-    "release": "release-it --dry-run",
+    "release": "release-it",
     "validate": "npm run lint"
   },
   "devDependencies": {
