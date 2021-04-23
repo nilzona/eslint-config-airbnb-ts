@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/nilzona/eslint-config-airbnb-ts/issues"
   },
-  "version": "14.1.0",
+  "version": "14.1.1",
   "main": "base.js",
   "dependencies": {
     "eslint-config-airbnb-base": "14.2.1",

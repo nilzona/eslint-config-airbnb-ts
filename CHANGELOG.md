@@ -1,3 +1,10 @@
+### [14.1.1](https://github.com/nilzona/eslint-config-airbnb-ts/compare/v14.1.0...v14.1.1) (2021-04-23)
+
+### Bug Fixes
+
+- use [@typescript-eslint](https://github.com/typescript-eslint) as peer dependencies ([f29d863](https://github.com/nilzona/eslint-config-airbnb-ts/commit/f29d863a452b3a484849a96e0f2a9860e70e7887))
+- **deps:** update dependency @typescript-eslint/eslint-plugin to v4.22.0 ([846b11e](https://github.com/nilzona/eslint-config-airbnb-ts/commit/846b11e47bc829065d4ab714f9a41785641058fd))
+
 ## [14.1.0](https://github.com/nilzona/eslint-config-airbnb-ts/compare/v14.0.0...v14.1.0) (2021-04-22)
 
 ### Features
