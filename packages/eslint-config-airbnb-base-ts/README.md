@@ -11,12 +11,12 @@ But is here modded to support airbnb-base with typescript support and leave out 
 
 ### 1) Install
 
-#### prerequisites
-
 this libary requires that typescript and eslint are installed
 
+#### install peer dependencies
+
 ```bash
-npm install --save-dev typescript eslint
+npm install @typescript-eslint/eslint-plugin @typescript-eslint/parser --save-dev
 ```
 
 make sure you have a tsconfig.json that includes the files you want to lint or look further down if you want to create a separate tsconfig for defining which files to lint.

@@ -10,12 +10,12 @@ This started as a fork from https://github.com/iamturns/eslint-config-airbnb-typ
 
 ### 1) Install
 
-#### prerequisites
+this libary requires that typescript and eslint are installed
 
-make sure you have typescript and eslint installed
+#### install peer dependencies
 
 ```bash
-npm install --save-dev typescript eslint
+npm install @typescript-eslint/eslint-plugin @typescript-eslint/parser --save-dev
 ```
 
 make sure you have a tsconfig.json that includes the files you want to lint or look further down if you want to create a separate tsconfig for defining which files to lint.

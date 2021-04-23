@@ -8,7 +8,7 @@ const { rules: baseStyleRules } = require('eslint-config-airbnb-base/rules/style
 const { rules: baseVariablesRules } = require('eslint-config-airbnb-base/rules/variables');
 
 module.exports = {
-  extends: ['plugin:@typescript-eslint/recommended'], // enable @typescript-eslint plugin recommended rules'
+  extends: ['airbnb-base', 'plugin:@typescript-eslint/recommended'], // enable @typescript-eslint plugin recommended rules'
   plugins: ['@typescript-eslint'],
   parser: '@typescript-eslint/parser',
   settings: {
